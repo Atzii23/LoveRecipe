@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    background-image: url(../img/index_fondopt2.jpg);
+    background-size: cover;
+
+}
+
+#banner{
+    background-image: url(../img/banner_index.jpg);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 450px;
+    padding-top: 50px;
+}
+
+nav{
+    background-color: #F784B3;
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 9px 20px 5px 1px #9a003d85;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+.botones_inicio, #persona_no_registrada, #SesionIniciada{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#persona_no_registrada{
+    display: none; /*--hace que no se muestre--*/
+}
+
+a, #userPerfil{
+    color: #FFF4F8;
+    text-decoration: none;
+
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+
+}
+
+.btn_nav, #favoritos{
+    width: 150px;
+    height: 20px;
+    padding: 15px;
+    background-color:#E0548D;
+    border-radius: 50px;
+    border: 4px solid #88284F;
+    text-align: center;  
+}
+
+/*
+#logo{
+    
+}
+*/
+
+
+/*------------SESION INICIADA----------------------*/
+#userPerfil{
+    float: right;
+    height: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#SesionIniciada{
+   min-width: 200px;
+    position: relative;
+    float: right;
+    
+    /* ---------------------------------------------------------------------------------------- Sesión Iniciada ------------- */
+    display: flex; /*hace que se muestre unicamente cuando la sesion inicio*/
+}
+
+#perfil:hover{
+    cursor: pointer;
+}
+
+#listaDesplegable{
+    position: absolute;
+    float: left;
+    top: 50px;
+    right: 0px;
+    background-color: #FFF5F9;
+    display: none;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 4px solid #88284F;
+}
+
+#perfil:hover #listaDesplegable{
+    display: block;
+    
+}
+
+#listaDesplegable ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaDesplegable li{
+    padding: 10px 20px;
+    color: #88284F;
+    text-align: center;
+}
+
+#listaDesplegable li:hover{
+    background-color: #E0548D;
+    color: #FFF5F9;
+    border-radius: 5px;
+}
+
+/*------------------------------------------------------*/
+
+/*----------------HOJA DE INTRODUCCION------------------------*/
+
+#pasta_cuaderno, #hoja_detras, #hoja_inicial{
+    width: 90%;
+    height: auto;
+    background-color: #E1548D;
+    border-radius: 0 15px 0 0;
+    border: 4px solid #87264E;
+    
+    margin: 0 auto;
+
+    margin-top: -200px;
+    position: relative;
+}
+
+#hoja_detras{
+    width: 97%;
+    background-color: #E0A198;
+    border: 4px solid #6D0C13;
+
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+
+#apartado_rosa, #apartado_azul{
+    width: 10%;
+    height: 80px;
+    background-color: #D948A1;
+    border-radius: 0 15px 0 0;
+    border: 4px solid #A51A6F;
+
+    margin-left: 50px;
+    margin-top: -65px;
+    
+    position: relative;
+}
+
+#apartado_rosa{
+    z-index: 2;
+}
+
+#apartado_azul{
+    background-color: #5785D3;
+    border: 4px solid #18315D;
+
+    margin-left: 120px;
+    
+}
+
+.pinchos{
+    background-image: url(../img/pinchos.png);
+    background-repeat: repeat-y;
+    background-size: 80px auto;
+    background-position: top center;
+
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 50;
+    left: -35px;
+    z-index: 10;
+}
+
+#hoja_inicial{
+    width: 98%;
+    background-color: #F0F0D8;
+    border: 4px solid #91474C;
+    margin-right: 30px;
+    margin-top: -60px;
+
+    z-index: 2;
+
+    background-image: url(../img/fondo\ hojas.png);
+    background-repeat: repeat-y; 
+    background-size: 100% auto;  
+    background-position: top center;
+}
+
+/*------CONTENIDO--------*/
+
+#corazon_sticker, #tape{
+    background-image: url(../img/corazon.png);
+    background-size: cover;
+
+    width: 250px;
+    height: 250px;
+    float: left;
+    
+    position: absolute;
+    top: -150px;
+    right: -50px;
+    z-index: 4;
+
+    transform: rotate(0deg);
+}
+
+#tape{
+    background-image: url(../img/tape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 190px;
+    height: 190px;
+
+    top: 80px;
+    right: 230px;
+
+    transform: rotate(deg);
+
+}
+
+#contenido_inicio{
+    
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    border-radius: 0 15px 0 0;
+}
+
+/*-----TEXTO------------*/
+
+#tituloRecipe{
+    
+    margin-top: 50px;
+    margin-left: 60px;
+
+    padding: 40px 0px 0px 30px;
+
+    font-family: "Madimi One", sans-serif;
+    font-size: 36px;
+    color: #A00142;
+}
+
+#textoSaludo, #respuestaIntro{
+    
+    margin-top: 30px;
+    margin-left: 60px;
+    
+    padding: 10px 30px 30px 30px;
+    
+    font-family: "Dongle", sans-serif; 
+    font-size: 36px;
+    line-height: 30px;
+    text-align: justify;
+    color: #340F11;
+}
+
+/*------IMAGEN------------*/
+
+#imagenPrincipal{
+    width: 400px;
+    height: 350px;
+    margin: 120px 0px 0px 130px;
+
+    background-image: url(../img/pastelito.jpg);
+    background-size: contain;
+    background-position: center;
+
+    box-shadow: 19px 20px 6px 0px #ae9164a6;
+}
+
+/*-----------SEGUNDA PARTE------------*/
+
+#quien{
+    
+    width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#lazoAzul{
+    background-image: url(../img/lazoAxul.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: "Madimi One", sans-serif;
+    font-size: 36px;
+    color: #0F1490;
+
+    padding: 20px 30px 30px 30px;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    
+    color: #0F1490;
+}
+
+#respuestaIntro{
+    
+    width: 93%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 50px;
+    /*margin-bottom: 120px;*/
+
+    padding: 10px;
+}
+
+/*-------------BOTON CREAR RECETA-------------------------*/
+
+#btn_crearReceta{
+    width: 130px;
+    height: 130px;
+    background-color: #E0548D;
+    border-radius: 50%;
+
+    margin-left:1160px;
+    margin-bottom: 50px;
+    z-index: 3;
+    
+    border: 6px solid #87264E;
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+
+#btn_crearReceta i{
+    font-size: 40px;
+    color: #FFF4F8;
+}
+
+#btn_crearReceta:hover{
+    cursor: pointer;
+}

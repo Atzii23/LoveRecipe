@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/ver_receta.css">
+    <title>Ver Receta - LoveRecipe</title>
+</head>
+
+<body>
+    <div id="banner">
+        <nav>
+            <div id="logo">
+                <a href="index.html">LoveRecipe</a>
+            </div>
+
+            <div class="botones_inicio">
+                <div class="btn_nav">
+                    <a href="catalogo.html">Recetas</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main id="inicioPagina">
+        <div id="pasta_cuaderno">
+            <div id="hoja_detras">
+                <div class="pinchos"></div>
+
+                <div id="hoja_inicial">
+                    <div id="clip"></div>
+
+                    <a href="catalogo.html" id="cerrar">X</a>
+
+                    <div id="detalles_receta">
+                        <div id="cuadro_preview">
+                            <img id="ver_imagen" alt="Imagen de la receta">
+                        </div>
+
+                        <div id="info_texto">
+                            <h1 id="ver_titulo">Cargando receta...</h1>
+                            <p id="ver_descripcion"></p>
+                        </div>
+                    </div>
+
+                    <div id="contenedor_contenido">
+                        <h2>Preparación</h2>
+                        <div id="ver_contenido"></div>
+                    </div>
+
+                    <div id="acciones_ver">
+                        <a href="catalogo.html" class="btn_accion">Volver al catálogo</a>
+                        <a id="btn_ir_editar" href="#" class="btn_accion">Editar receta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--<script src="js/conectar_api.js"></script>
+    <script src="js/ver_receta.js"></script>
+    -->
+</body>
+
+</html>

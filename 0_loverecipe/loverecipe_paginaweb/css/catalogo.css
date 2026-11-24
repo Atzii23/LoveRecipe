@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.partes_fuera {
+    background-color: #f4b6c8;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.partes_dentro {
+    border-top: 48px solid #9e224e;
+    border-left: 38px solid #e66493;
+    border-right: 38px solid #e66493;
+    border-bottom: 48px solid #dc5384;
+}
+
+.mantelito {
+    background-image: url(../img/fondo_tarjetas.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+#contenedor_tarjetas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookmark {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.85); /* Blanco cuando NO es favorita */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    display: block;
+}
+
+.bookmark.activo {
+    color: #FFD700; /* Dorado cuando SÍ es favorita (puedes cambiarlo a #C22163 si prefieres rosa) */
+}
+
+/*--BARRA BUSQUEDA--*/
+
+#volver {
+    width: 60px;
+    height: auto;
+    font-size: 50px;
+    float: left;
+    margin: 20px 0px 0px 30px;
+}
+
+#volver a {
+    text-decoration: none;
+    color: #010214;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.barra_busqueda {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.barra_busqueda input[type=text] {
+    background-color: #FFF5F9;
+    width: 100%;
+    height: 50px;
+    padding: 30px 45px 30px 15px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 4px solid #E0548D;
+}
+
+.tarjeta_receta {
+    background-color: #FFF5F9;
+    width: 350px;
+    height: auto;
+    border: 6px solid #C22163;
+    border-radius: 25px;
+    margin: 30px 30px 30px 54px;
+    padding: 15px;
+}
+
+#buscar {
+    font-size: 30px;
+    margin-top: 25px;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+}
+
+.tarjeta_imagen {
+    background-color: #F8C4DA;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.tarjeta_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta_cuerpo {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    font-family: "Dongle", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.descripcion_tarjeta {
+    margin-top: 10px;
+}
+
+.tarjeta_herramientas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.estrellas {
+    display: flex;
+    direction: ltr;
+}
+
+.estrella {
+    font-size: 30px;
+    color: #87264E;
+    cursor: pointer;
+}
+
+.acciones_iconos {
+    display: flex;
+    gap: 20px;
+    margin-left: 127px;
+}
+
+.acciones_iconos i {
+    font-size: 20px;
+    cursor: pointer;
+}

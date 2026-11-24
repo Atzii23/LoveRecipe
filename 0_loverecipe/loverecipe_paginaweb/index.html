@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>LoveRecipe</title>
+</head>
+
+<body>
+    <div id="banner">
+
+        <nav>
+
+            <div id="logo">
+
+                <a href="index.html">
+                    LoveRecipe
+                </a>
+
+            </div>
+
+            <div class="botones_inicio">
+
+                <div class="btn_nav">
+                    <a href="catalogo.html">
+                        Recetas
+                    </a>
+                </div>
+
+                <!--Sesion iniciada-->
+
+                <div id="SesionIniciada">
+
+                    <div id="favoritos">
+                        <a href="catalogo.html?favoritos=true">
+                            Favoritos
+                        </a>
+                    </div>
+
+                    <img />
+
+                    <div id="perfil">
+
+                        <div id="userPerfil">
+                            [Usuario]
+                        </div>
+
+                        <div id="listaDesplegable">
+                            <ul>
+                                <li>Cerrar sesion</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!----se apagan cuando se inicia sesion------>
+
+                <div id="persona_no_registrada">
+
+                    <div class="btn_nav">
+                        <a href="">
+                            Registrarse
+                        </a>
+                    </div>
+
+                    <div class="btn_nav">
+                        <a href="">
+                            Iniciar Sesion
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!--HOJA DE INTRODUCCION-->
+
+    <div id="inicioPagina">
+
+        <div id="pasta_cuaderno">
+
+            <div id="hoja_detras">
+
+                <div id="apartado_rosa"></div>
+
+                <div id="apartado_azul"></div>
+
+                <div id="corazon_sticker"></div>
+
+                <div class="pinchos"></div>
+
+                <div id="hoja_inicial">
+
+                    <div id="tape"></div>
+
+                    <div id="contenido_inicio">
+
+                        <div id="texto">
+                            <div id="tituloRecipe">
+                                ¡Bienvenido a <br>
+                                LoveRecipe!
+                            </div>
+
+                            <div id="textoSaludo">
+                                ¡Crea, guarda, organiza y comparte tus platillos favoritos en un solo lugar!<br><br>
+                                LoveRecipe nace para acompañar a quienes están dando sus primeros pasos en la cocina y
+                                buscan un espacio donde guardar sus creaciones gastronómicas.<br>
+                                ¡Cualquier amante de la cocina es bienvenido!
+                            </div>
+                        </div>
+
+                        <div id="imagenPrincipal"></div>
+
+                    </div>
+
+                    <div id="quien">
+
+                        <div id="lazoAzul">
+                            ¿Quienes somos?
+                        </div>
+
+                        <div id="respuestaIntro">
+                            En LoveRecipe creemos firmemente que cualquiera puede cocinar.
+                            Por ello, nos enfocamos en brindar una interfaz amigable e
+                            intuitiva que le pierda el miedo a la cocina y acompañe a
+                            nuestros usuarios en cada paso, estén donde estén.
+                        </div>
+                    </div>
+
+                    <!--Solo si la sesion esta activa-->
+                    <div id="btn_crearReceta">
+                        <a href="Crear_receta.html"><i class="fa-solid fa-pen"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/conectar_api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>

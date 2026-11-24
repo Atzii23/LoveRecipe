@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFC1D6;
+}
+
+#banner {
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+}
+
+nav {
+    background-color: #F784B3;
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 9px 20px 5px 1px #9a003d85;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+a {
+    color: #FFF4F8;
+    text-decoration: none;
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+}
+
+.btn_nav {
+    width: 150px;
+    padding: 15px;
+    background-color: #E0548D;
+    border-radius: 50px;
+    border: 4px solid #88284F;
+    text-align: center;
+}
+
+#pasta_cuaderno, #hoja_detras, #hoja_inicial {
+    width: 90%;
+    height: auto;
+    background-color: #E1548D;
+    border-radius: 0 15px 0 0;
+    border: 4px solid #87264E;
+    margin: 0 auto;
+    margin-top: -100px;
+    position: relative;
+}
+
+#hoja_detras {
+    width: 97%;
+    background-color: #E0A198;
+    border: 4px solid #6D0C13;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.pinchos {
+    background-image: url(../img/pinchos.png);
+    background-repeat: repeat-y;
+    background-size: 80px auto;
+    background-position: top center;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    margin-top: 60px;
+    left: -35px;
+    z-index: 10;
+}
+
+#clip {
+    background-image: url(../img/adjuntar-simbolo-de-clip.png);
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -10px;
+    left: 130px;
+    z-index: 4;
+    transform: rotate(331deg);
+}
+
+#hoja_inicial {
+    width: 98%;
+    background-color: #F0F0D8;
+    border: 4px solid #91474C;
+    margin-right: 30px;
+    margin-top: -20px;
+    padding: 50px 60px;
+    z-index: 2;
+    background-image: url(../img/fondo\ hojas.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    color: #6D0C13;
+    font-family: "Dongle", sans-serif;
+    font-size: 90px;
+    line-height: 1;
+}
+
+#detalles_receta {
+    background-color: #F784B3;
+    width: 95%;
+    margin: 20px auto 30px auto;
+    padding: 30px;
+    border: 8px solid #C22163;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+#cuadro_preview {
+    background-color: #F8C4DA;
+    width: 270px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 4px solid #C22163;
+}
+
+#ver_imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#info_texto {
+    flex: 1;
+}
+
+#ver_titulo {
+    font-family: "Madimi One", sans-serif;
+    font-size: 38px;
+    color: #FFF4F8;
+    margin-bottom: 15px;
+}
+
+#ver_descripcion {
+    background-color: #F8C5DA;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-family: "Dongle", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #340F11;
+}
+
+#contenedor_contenido {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#contenedor_contenido h2 {
+    font-family: "Madimi One", sans-serif;
+    font-size: 28px;
+    color: #A00142;
+    margin-bottom: 15px;
+}
+
+#ver_contenido {
+    padding: 25px;
+    min-height: 200px;
+    border-radius: 10px;
+    border: 4px solid #91474C;
+    background-color: #fffef6d9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#acciones_ver {
+    width: 95%;
+    margin: 30px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_accion {
+    padding: 15px 30px;
+    background-color: #E0548D;
+    border-radius: 50px;
+    border: 4px solid #88284F;
+    color: #FFF4F8;
+    font-family: "Madimi One", sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Crear_receta.css">
+    <title>Crear Receta</title>
+</head>
+
+<body>
+    <div id="banner">
+
+        <nav>
+
+            <div id="logo">
+
+                <a href="index.html">
+                    LoveRecipe
+                </a>
+
+            </div>
+
+            <div class="botones_inicio">
+
+                <div class="btn_nav">
+                    <a href="catalogo.html">
+                        Recetas
+                    </a>
+                </div>
+
+                <!--Sesion iniciada-->
+
+                <div id="SesionIniciada">
+
+                    <div id="favoritos">
+                        <a href="catalogo.html?favoritos=true">
+                            Favoritos
+                        </a>
+                    </div>
+
+                    <img />
+
+                    <div id="perfil">
+
+                        <div id="userPerfil">
+                            [Usuario]
+                        </div>
+
+                        <div id="listaDesplegable">
+                            <ul>
+                                <li>Cerrar sesion</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!--HOJA DE INTRODUCCION-->
+
+    <main id="inicioPagina">
+
+        <div id="pasta_cuaderno">
+
+            <div id="hoja_detras">
+
+                <div class="pinchos"></div>
+
+                <div id="hoja_inicial">
+
+                    <div id="clip"></div>
+
+                    <div id="detalles_receta">
+
+                        <div id="cerrar">X</div>
+
+                        <div id="cuadro_preview">
+                            <img id="PreviewImagenComida">
+                        </div>
+
+                        <label for="imagen_comida">
+                            &#9650 Subir imagen
+                            <input type="file" id="imagen_comida">
+                        </label>
+
+                        <div id="detalles_comida_titulo">
+                            <input type="text" id="input_titulo" placeholder="Titulo">
+                        </div>
+
+                        <div id="detalles_comida_desc">
+                            <textarea type="text" id="input_descripcion" placeholder="Descripcion"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div id="barra_herramientas">
+
+                        <div id="editor">
+
+                            <button id="bold"><i class="fas fa-bold"></i></button>
+                            <button id="italic"><i class="fas fa-italic"></i></button>
+                            <button id="underline"><i class="fas fa-underline"></i></button>
+                            <button id="strikethrough"><i class="fas fa-strikethrough"></i></button>
+
+                            <button id="alignLeft"><i class="fas fa-align-left"></i></button>
+                            <button id="alignCenter"><i class="fas fa-align-center"></i></button>
+                            <button id="alignRight"><i class="fas fa-align-right"></i></button>
+                            <button id="alignJustify"><i class="fas fa-align-justify"></i></button>
+
+                            <button id="orderedList"><i class="fas fa-list-ol"></i></button>
+                            <button id="unorderedList"><i class="fas fa-list-ul"></i></button>
+
+                            <select id="font">
+                                <option value="Arial">Arial</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                            </select>
+
+                            <select id="fontSize">
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+
+                            </select>
+
+                        </div>
+
+                        <div contenteditable="true" id="textArea"></div>
+
+                    </div>
+
+                    <!--Solo si la sesion esta activa-->
+                    <button id="btn_guardar_receta">Guardar receta</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/conectar_api.js"></script>
+    <script src="js/receta.js"></script>
+</body>
+
+</html>
